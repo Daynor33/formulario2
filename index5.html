@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos5.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <h2>Crear tu cuenta</h2>
+    <center><h3>Una suscripción para Scribd, Everand y SlideShare</h3></center>
+    <form action="submit.php" method="post">
+        <label for="correo">Correo Electrónico:</label><br>
+        <input type="email" id="correo" name="correo" required><br><br>
+        <label for="contraseña">Contraseña:</label><br>
+        <input type="password" id="contraseña" name="contraseña" required><br><br>
+        <button onclick="loginWithGoogle()">Continuar con Google</button><br><br>
+        <button onclick="loginWithFacebook()">Continuar con Facebook</button><br><br>
+        <div class="g-recaptcha" data-sitekey="TU_CLAVE_PUBLICA_DEL_RECAPTCHA"></div><br><br>
+        <input type="submit" value="Registrate">
+    </form>
+</body>
+</html>
